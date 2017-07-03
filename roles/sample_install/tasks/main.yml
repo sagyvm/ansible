@@ -1,0 +1,9 @@
+include_vars: vars/main.yml
+
+# this task runs the hostname command on remote server and displays the stout/stderr on ansible run
+# - name: check hostname
+    shell: hostname
+    ignore_errors: yes
+    register: instance_hostname
+
+  - debug: msg="{{ instance_hostname }}"

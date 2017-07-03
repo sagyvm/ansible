@@ -1,0 +1,6 @@
+---
+- hosts: aws_instance
+  remote_user: ubuntu
+  tasks:
+  - name: copy files to server
+    copy: src=/home/sagarp/abc.txt dest=/tmp/abc.txt

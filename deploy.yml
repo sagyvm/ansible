@@ -1,0 +1,6 @@
+---
+- hosts: aws_instance
+  become: yes
+  become_method: sudo
+  roles:
+          - ansible-role-kvm

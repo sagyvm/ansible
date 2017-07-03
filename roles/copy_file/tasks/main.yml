@@ -1,0 +1,4 @@
+---
+- copy:
+    src: /home/sagarp/abc.txt
+    dest: /tmp/abc.txt
